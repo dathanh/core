@@ -1,4 +1,5 @@
 <?php
+require_once 'constant.php';
 /**
  * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
@@ -68,6 +69,7 @@ use Cake\Utility\Security;
 try {
     Configure::config('default', new PhpConfig());
     Configure::load('app', 'default', false);
+    Configure::load('additional_config');
 } catch (\Exception $e) {
     exit($e->getMessage() . "\n");
 }
