@@ -50,19 +50,20 @@ class ConfigsController extends BackendController {
 
     public function initialize() {
         parent::initialize();
-        $this->modelName = 'configs';
-        $this->model = 'Configs';
+        Utils::useTables($this, ['App.Configs']);
+        $this->modelName = 'Configs';
+        $this->model = $this->Configs ;
     }
 
     protected function _prepareObject() {
         $inputField = [
-            'title' => [
+            'name' => [
                 'label' => 'title fqwfqf',
                 'type' => 'text',
                 'value' => '',
                 'validation' => ''
             ],
-            'content' => [
+            'field' => [
                 'label' => 'content efwef',
                 'type' => 'textarea',
                 'value' => '',

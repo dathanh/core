@@ -3,8 +3,8 @@
     <?= $this->Form->create($object = '', ['class' => 'form-horizontal', 'accept-charset' => 'utf-8', 'enctype' => 'multipart/form-data']) ?>
     <ul class="nav nav-tabs">
         <li class="active "><a data-toggle="tab" href="#defualt" > <?= __('Default') ?></a></li>
-        <?php if (!empty($mutilanguage)): ?>
-            <?php foreach ($mutilanguage as $language) : ?>
+        <?php if (!empty($mutiLanguage)): ?>
+            <?php foreach ($mutiLanguage as $language) : ?>
                 <li class="">
                     <a data-toggle="tab" href="#<?= $language ?>"><?= __($language) ?></a>
                 </li>
@@ -17,11 +17,11 @@
                 <?= $this->element('/Backend/create_update_field', ['inputField' => $inputField]) ?>   
             </div>
         </div>
-        <?php if (!empty($mutilanguage)): ?>
-            <?php foreach ($mutilanguage as $language) : ?>
-                <div id="<?= $language ?>" class="tab-pane">
+        <?php if (!empty($mutiLanguage)): ?>
+            <?php foreach ($mutiLanguage as $languageCode => $languageName) : ?>
+                <div id="<?= $languageName ?>" class="tab-pane">
                     <div class="panel-body">
-                        <?= $this->element('/Backend/create_update_field', ['inputField' => $multiLangFields]) ?>
+                        <?= $this->element('/Backend/create_update_field', ['inputField' => $multiLangFields[$languageCode]]) ?>
                     </div>
                 </div>
             <?php endforeach; ?>

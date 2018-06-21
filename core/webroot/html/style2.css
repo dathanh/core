@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 19, 2018, 1:16:43 PM
+    Author     : admin
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.topNav{
+    background-color: #333;
+}
+.subList{
+    display: none;
+    position: absolute;
+
+}
+.subList li{
+    /*    margin-left: 0 !important;*/
+}
+
+.topNav ul li {
+    color: #f1f1f1;
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-left: solid 1px #FFF;
+}
+.topNav ul li a{
+    text-decoration: none;
+    color: #FFF;
+    display: block;
+}
+.topNav ul li a:hover {
+    background-color: #006621;
+}
+.topNav ul li:hover .subList{
+    display: block;
+    background-color: #333;
+}
+.subList ul li :hover .topNav u{}
+.icon{
+    display: none;
+    position: absolute;
+    float: right;
+    top: 10px;
+    right: 10px;
+    color: #FFF;
+}
+@media screen and (max-width: 600px) {
+    .topNav ul li:not(:first-child) {display: none;}
+    .topNav a.icon {
+        float: right;
+        display: block;
+    }
+}

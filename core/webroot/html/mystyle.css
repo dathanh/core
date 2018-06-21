@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 19, 2018, 11:16:45 AM
+    Author     : admin
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+html a {
+    color: #000;
+    text-decoration: none;
+}
+html a:hover,
+html a:visited,
+html a:focus {
+    text-decoration: none;
+    outline: none;
+}
+html p {
+    margin-top: 10px;
+}
+body {
+    overflow: hidden;
+    visibility: inherit;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+clearfix:after{
+    clear: both;
+    content: '';
+    display: table;
+    visibility: hidden;
+}
+header {
+    position: fixed;
+}
+header p img{
+    float: left;
+    display: inline;
+    padding-left:20px; 
+}
+
+header div.navTop{
+    float: left;
+    display: inline;
+    padding-left:20px; 
+}
+header div.navTop ul{
+    margin-left: 100px;
+}
+header div.navTop ul li{
+    display: inline-block;
+    margin: 25px 10px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+.breadcrumb{
+    clear: both;
+    margin-top: 75px;
+    border: 1px solid #e4e4e4;
+    border-left: none;
+    border-right: none;
+    background-color: #f8f8f8;
+}
+.breadcrumb ul li{
+    display: inline;
+    font-size: 18px;
+}
+.breadcrumb ul li+li:before{
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+
+}

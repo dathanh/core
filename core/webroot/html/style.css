@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul { list-style: none; }
+
+img { border: none; vertical-align: top; }
+
+div.main-container {
+    border: 1px solid #a3a2a3;
+    margin: 20px auto;
+    width: 900px;
+}
+#Banner{
+    padding: 10px;
+}
+div#Banner div.leftBaner h1 {
+    margin-bottom: 20px;
+}
+.leftBaner{
+    float: left;
+}
+
+.rightBaner{
+    float: right;
+}
+.rightBaner ul {
+    text-align: right;
+}
+.rightBaner ul li {
+    display: inline;
+}
+.rightBaner ul.list-link {
+    margin-top: 40px;
+}
+.rightBaner ul.list-link li{
+    padding: 0 5px; 
+    border-right:solid 1px #333;
+}
+.rightBaner ul.list-link li:last-child{
+    border-right:none;
+}
+
+#navigation{
+    clear: both;
+}
+
+#navigation ul {
+    margin-top: 10px;
+    border: solid 1px #333;
+    background-image: url(images/img_products01.jpg);
+    height: 22px;
+    padding: 12px 0;
+}
+
+#navigation ul li{
+    display:  inline;
+    padding: 10px 10px;
+    border-right: solid 1px #fff;
+
+}
+#navigation ul li:last-child{
+    border-right:none;
+}
+#navigation ul li a {
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+#navigation ul li a:hover{
+    color: yellow;
+}
+#main{
+    padding: 20px 10px;
+}
+#leftMain {
+    float: left;
+    width: 620px;
+}
+#rightMain{
+    float:right;
+    width: 240px;
+}
+
+div#main div#leftMain div#content h2 {
+    border-bottom: 1px solid #666666;
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+div#main div#leftMain div#content div.new-product p {
+    float: left;
+    width: 241px;
+}
+div#main div#leftMain div#content div.new-product div.description{
+    float: right;
+    width: 350px;
+}
+
+div#main div#leftMain div#content div.new-product div.description h3{
+    color: #5870e6;
+}
+
+div#main div#leftMain div#content div.new-product:after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+
+div#main div#leftMain div#content div.slideBar{
+    clear: both;
+    margin-top: 10px;
+}
+div#main div#leftMain div#content div.slideBar ul {
+    border-top: solid 1px #a3a2a3;
+    border-bottom: solid 1px #a3a2a3;
+    padding: 10px 30px;
+
+}
+div#main div#leftMain div#content div.slideBar ul li {
+    display: inline;
+    padding: 0px 10px;
+}
+div#main div#leftMain div#listNews h2 {
+    font-size: 120%;
+    border-bottom: solid 1px #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div#main div#leftMain div#listNews dl dd {
+    border-bottom: 1px dotted #000; /* tao duong vien ben duoi text */
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+div#main div#leftMain div#listNews dl dd:last-child{
+    border-bottom: none;
+    padding-bottom: 20px;
+} 
+div#main div#leftMain div#listNews dl dd a{
+    text-decoration: none;
+}
+div#main div#leftMain div#listNews dl dd a:hover{
+    text-decoration: underline;
+}
+div.imageContact{
+    text-align: center;
+}
+div.list-relationship-link h2{
+    border-bottom: 1px solid #666666;
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+div.list-relationship-link ul{
+    padding-left: 15px;
+}
+div.list-relationship-link ul li{
+    background: url(images/ico_arrow.gif) no-repeat left center ;
+    padding-left: 15px;
+}
+div.list-relationship-link ul li a{
+    text-decoration: none;
+}
+div.list-advertisement h2{
+    margin-top: 50px;
+    border-bottom: 1px solid #666666;
+    font-size: 120%;
+    margin-bottom: 20px;
+}
+div.list-advertisement ul li {
+    margin-bottom: 10px;
+}
+div#main:after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+#footer{
+    border-top: solid 1px #a3a2a3;
+    margin-top: 60px;
+    padding: 5px 10px;
+    clear: both;
+}
+div#footer div.left-footer{
+    float: left;
+    width: 340px;
+    padding-bottom: 10px;
+}
+div#footer div.right-footer{
+    float: right;
+    width: 530px;
+}
+
+div#footer:after {
+    clear: both;
+    content: "";
+    display: table;
+    visibility: hidden;
+}
+div#footer div.right-footer ul, div#footer div.right-footer p {
+    text-align: right;
+    padding-bottom: 10px;
+}
+div#footer div.right-footer ul li{
+    display: inline;
+    border-right: solid 1px #333; 
+    padding-right: 10px;
+}
+div#footer div.right-footer ul li:last-child{
+    border-right: none; 
+}
