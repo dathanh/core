@@ -1,0 +1,165 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 22, 2018, 9:48:38 AM
+    Author     : admin
+*/
+.icon-bar a{
+    /*display: block;*/
+    float: left;
+    padding: 15px;
+    background-color: #555;
+    color: #fff;
+    font-size: 20px;
+}
+.icon-bar a:hover{
+    background-color: #4caf50;
+}
+/*.clear{
+    clear: both;
+}*/
+.title{
+    padding: 15px;
+    background-color: #ddd;
+    margin: 0px;
+    border-bottom: solid 1px #fff; 
+}
+.panel{
+    padding: 15px;
+    display: none;
+    transition: 0.4s;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.active{
+    background-color: #555;
+}
+.title:after{
+    content: '\02795';
+    float: right;
+}
+.active:after{
+    content: '\2796';
+}
+.tab-pane{
+    /*padding: 0;*/
+
+}
+.tab-table{
+    background-color: #ddd;
+    border: 1px solid red;
+    display: table;
+    width: 100%;
+}
+
+.tab-pane:after ,clearfix:after{
+    clear: both;
+    content: '';
+    display: table;
+    visibility: hidden;
+}
+.tab-table a{
+    display: block;
+    padding: 12px;
+    background-color: #555;
+    color: #fff;
+    float: left;
+    border-right: 2px solid #fff; 
+}
+.tab-table a:last-child{
+    border-right: none;
+}
+.tab-table a:hover{
+    background-color: #4caf50;
+}
+.tab-content{
+
+    display:  none;
+    border: 1px solid #ddd;
+}
+.tab-table a.active2{
+    background-color: #4caf50;
+}
+.tab-table-vertical{
+    float: left;
+    box-sizing: border-box;
+    width: 10%;
+    background-color: #555;
+    height: auto; 
+}
+.tab-table-vertical a{
+    display: block;
+    background-color: #555;
+    padding: 15px;
+    border-bottom: 1px solid #fff
+}
+.tab-table-vertical a:hover{
+    background-color: #4caf50;
+    cursor: pointer;
+}
+.tab-content-vertical{
+    float: left;
+    display: none;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    width: 90%;
+}
+
+div.btn-group:after {
+    clear: both;
+    content: '';
+    display: table;
+    visibility: hidden;
+}
+a.btn-default{
+    display: block;
+    float: left;
+    padding: 12px;
+    background-color: #007bb6;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0px;
+}
+.btn-dropdown{
+    margin: 0px;
+    position: relative;
+    display: block;
+    color: #fff;
+    float: left;
+    padding: 12px;
+    background-color: transparent;
+    text-align: left;
+    border-left: 1px solid #fff;
+    background-clip: padding-box;
+
+    border: 2px solid transparent;
+}
+div.dropdown{
+    background-color: #ddd;
+    display:none;
+    position: absolute;
+    top: 40px;
+    z-index: 2;
+}
+.dropdown > a{
+    display: table;
+    padding: 12px;
+}
+a.dropdown >i{
+    border-left: 1px solid #fff; 
+}
+.btn-default:hover, div.btn-dropdown:hover{
+    background-color: #005983;
+}
+div.btn-dropdown a:hover{
+    background-color: red;
+} 
+
+div.btn-dropdown:hover > div.dropdown {
+    display: block;
+}
